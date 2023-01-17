@@ -1,0 +1,822 @@
+@font-face {
+    font-family: Philosopher;
+    src: url(fonts/Philosopher/Philosopher-Regular.ttf);
+}
+
+@font-face {
+    font-family: Josefin sans;
+    src: url(fonts/Josefin_Sans/static/JosefinSans-Thin.ttf);
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url(fonts/Dosis/static/Dosis-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gilda_Display;
+    src: url(fonts/Gilda_Display/GildaDisplay-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navli {
+    padding-left: 25px;
+    font-family: "Philosopher";
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbtn {
+    font-family: "Philosopher";
+    background-color: #ed1c24;
+}
+
+.carousel-container {
+    background-color: #222222;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+@media screen and (max-width: 1252px) {
+    .carousel-container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+    }
+}
+
+.section img {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0px;
+    top: 0px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.title-box {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-container>h2 {
+    color: #FFFFFF;
+    font-family: "Josefin sans";
+    font-size: 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .inner-container>h2 {
+        font-size: 60px;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .inner-container>h2 {
+        font-size: 30px;
+
+    }
+}
+
+.saltlogo-container {
+    margin: -10px 0px 0px 0px;
+    width: 97%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.saltlogo-container img {
+    width: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+    .saltlogo-container img {
+        width: 40%;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .saltlogo-container img {
+        width: 50%;
+
+    }
+}
+
+.slogan-restaurant {
+    margin-top: 10px;
+}
+
+.slogan-restaurant>h2 {
+    color: #FFFFFF;
+    font-family: "Josefin Sans", Sans-serif;
+    font-size: 19px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .slogan-restaurant>h2 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slogan-restaurant>h2 {
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+}
+
+.our-brands-h>h2 {
+    color: #FFFFFF;
+    font-family: "Philosopher", Sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.our-brands-txt>p {
+    text-align: center;
+    color: #E1E1E1;
+    font-family: "Dosis";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.our-brands-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.b1,
+.b2,
+.b3 {
+    margin: 0px 10px 10px 0px;
+}
+
+.our-brands-container .b1 {
+    padding: 50px 15px 50px 15px;
+    background-color: #FFFFFFE0;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+}
+
+.our-brands-container .b1i {
+    width: 240px;
+    height: 100px;
+}
+
+.our-brands-container .b2 {
+    padding: 50px 15px 50px 15px;
+    background-color: #FFFFFFE0;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+}
+
+.our-brands-container .b2i {
+    width: 240px;
+    height: 100px;
+}
+
+.our-brands-container .b3 {
+    padding: 50px 15px 50px 15px;
+    background-color: #FFFFFFE0;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
+}
+
+.our-brands-container .b3i {
+    width: 240px;
+    height: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .our-brands-container .b1 {
+        padding: 25px 5px 25px 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-brands-container .b1i {
+        width: 160px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-brands-container .b2 {
+        padding: 25px 5px 25px 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-brands-container .b2i {
+        width: 160px;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-brands-container .b3 {
+        padding: 25px 5px 25px 5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-brands-container .b3i {
+        width: 160px;
+        height: 65px;
+    }
+}
+
+.section-2 {
+    background-color: #222222;
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    border-top: 2px solid red;
+    padding-top: 5%;
+    flex-direction: column;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-city {
+    width: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+    .img-city {
+        width: 40%;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-city {
+        width: 50%;
+
+    }
+}
+
+.sec2-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.sec2-logo {
+    width: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+    .sec2-logo {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sec2-logo {
+        width: 50%;
+    }
+}
+
+.sec2-h-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sec2-h {
+    color: red;
+    font-family: "Philosopher";
+    font-size: 50px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+    .sec2-h {
+        font-size: 25px;
+    }
+}
+
+.sec2-txt {
+    text-align: center;
+    color: #E1E1E1;
+    font-family: "Dosis";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.box-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #818181;
+    padding: 0px 0px 50px 0px;
+}
+
+.box-row>.box1 {
+    padding: 60px 21px 60px 21px;
+    background-color: #FFFFFF;
+    background-image: url(images/box1-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+    margin-right: 1%;
+}
+
+.box-row>.box2 {
+    padding: 60px 33px 60px 33px;
+    background-color: #FFFFFF;
+    background-image: url(images/box2-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+    margin-right: 1%;
+}
+
+.box-row>.box3 {
+    padding: 60px 5px 60px 5px;
+    background-color: #FFFFFF;
+    background-image: url(images/box3-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+    margin-right: 1%;
+}
+
+.content-box-wrapper {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 1px #000;
+    ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-txt b {
+    padding-left: 27%;
+}
+
+.content-icon img {
+    width: 33px;
+}
+
+.content-h {
+    font-family: "Gilda_Display";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.content-txt {
+    font-family: "Dosis";
+    font-weight: 500;
+    line-height: 1.1em;
+}
+
+.section-3 {
+    background-color: #222222;
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    padding-top: 5%;
+    flex-direction: column;
+}
+
+.sec3-h-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sec3-h {
+    color: red;
+    font-family: "Philosopher";
+    font-size: 50px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+    .sec3-h {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sec4-h {
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sec5-h {
+        font-size: 25px !important;
+    }
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 25px;
+}
+
+.divide-line {
+    background-color: #FFFFFF;
+    width: 15%;
+    border-style: solid;
+    color: #FFFFFF;
+    border-width: 2px;
+}
+
+.box-row2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.box-row2>.box4 {
+    padding: 60px 21px 60px 21px;
+    background-color: #FFFFFF;
+    background-image: url(images/box4-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+    margin-right: 1%;
+}
+
+.box-row2>.box5 {
+    padding: 60px 38px 60px 38px;
+    background-color: #FFFFFF;
+    background-image: url(images/box5-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+    margin-right: 1%;
+}
+
+.box-row2>.box6 {
+    padding: 60px 30px 60px 30px;
+    background-color: #FFFFFF;
+    background-image: url(images/box6-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+    margin-right: 1%;
+}
+
+.ch {
+    padding-left: 30px;
+}
+
+.ch2 {
+    padding-left: 45px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .box4,
+    .box5,
+    .box6 {
+        margin: 0px 16% 0px 16%;
+    }
+}
+
+.content-txt .bph {
+    padding-left: 10%;
+}
+
+.sec4-h-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sec4-h {
+    color: red;
+    font-family: "Philosopher";
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.section-4 {
+    background-color: #222222;
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    padding-top: 5%;
+    flex-direction: column;
+}
+
+.col-box {
+    padding: 60px 30px 60px 30px;
+    background-color: #FFFFFF;
+    background-image: url(images/col-box-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.col-boxh {
+    text-decoration: underline;
+}
+
+.sec5-h-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sec5-h {
+    color: red;
+    font-family: "Philosopher";
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.section-5 {
+    background-color: #222222;
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    padding-top: 5%;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.sec5-txt {
+    margin: -8px 0px 0px 0px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Dosis";
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.divide-line2 {
+    background-color: #FFFFFF;
+    width: 13%;
+    border-style: solid;
+    color: #FFFFFF;
+    border-width: 2px;
+}
+
+.sec5-box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boxa1,
+.boxa2 {
+    padding: 40px 15px 40px 15px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: red;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+
+}
+
+.boxb1,
+.boxb2 {
+    padding: 40px 78px 40px 78px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: red;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 5px;
+
+}
+
+.box-wrapper {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec5-boxa,
+.sec5-boxb {
+    margin-right: 5px;
+    font-family: "Gilda Display";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.box-icon img {
+    width: 44px;
+    padding-bottom: 15px;
+}
+
+.footer {
+    background-color: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5%;
+    border-top: 3px solid red;
+    color: #E1E1E1;
+}
+
+@media screen and (max-width: 992px) {
+    .f-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.divider_f-2 {
+    width: 50%;
+    border-top: 2px solid red;
+    background-color: red;
+    margin-bottom: 5px;
+}
+
+.f-ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.f-ul i {
+    color: #ed1c24;
+}
+
+.social-box i {
+    color: #FFFFFF;
+    background-color: #ed1c24;
+    border: 5px solid #ed1c24;
+    border-radius: 10px;
+}
+
+.google-play {
+    width: 40%;
+}
+
+.app-store {
+    width: 30%;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .google-play {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-store {
+        width: 40%;
+    }
+}
+
+.f-1 p {
+    font-family: "Dosis";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.f-2 h2 {
+    font-family: "Philosopher";
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.f-2 li {
+    font-family: "Dosis";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.f-3 h2 {
+    font-family: "Philosopher";
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.f-3 li {
+    font-family: "Dosis";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.f-4 h2 {
+    font-family: "Philosopher";
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #E1E1E1;
+}
+
+.footer-link:hover {
+    color: #ed1c24;
+}
+.sfi, .sti, .sii {
+    text-decoration: none;
+}
+.sfi:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 2s;
+}
+.sti:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 2s;
+}
+.sii:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce;
+    animation-duration: 2s;
+}
